@@ -27,7 +27,7 @@ end
 
 def console_start
   app = App.new
-  app.WELCOME
+  app.welcome
 
   while menu
     selected = gets.chomp.to_i
@@ -51,11 +51,7 @@ def console_start
     when 9
       puts 'app.add_games'
     when 10
-      puts 'app.add_genres'
-    when 11
-      puts 'app.add_labels'
-    when 12
-      puts 'app.add_author'
+      puts 'app.add_movie'
     when 13
       puts 'Thank youu for usinf our app!'
       break

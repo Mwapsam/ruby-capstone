@@ -1,4 +1,4 @@
-class App 
+class App
   attr_accessor :books, :music_albums, :games, :genres, :labels, :authors
 
   def initialize
@@ -10,7 +10,7 @@ class App
     @authors = []
   end
 
-  def WELCOME
+  def welcome
     puts 'Welcome to our Ruby Capstone!!'
   end
 end
