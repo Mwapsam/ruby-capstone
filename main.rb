@@ -14,9 +14,7 @@ def menu
     'Add a book',
     'Add a music album',
     'Add a game',
-    'Add a genre',
-    'Add an label',
-    'Add a author',
+    'Add a movie',
     'Exit'
   ]
 
@@ -52,7 +50,7 @@ def console_start
       puts 'app.add_games'
     when 10
       puts 'app.add_movie'
-    when 13
+    when 11
       puts 'Thank youu for usinf our app!'
       break
     else
