@@ -23,7 +23,7 @@ def menu
   end
 end
 
-def console_start
+def console_start  # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
   app = App.new
   app.welcome
 
