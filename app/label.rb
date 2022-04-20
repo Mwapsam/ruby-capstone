@@ -10,7 +10,7 @@ class Label
   end
 
   def add_item(item)
-    @items.push(item)
-    items.label = self
+    @items << item unless @items.include?(item)
+    items.add_label(self)
   end
 end
