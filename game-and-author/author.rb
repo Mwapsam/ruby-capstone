@@ -1,7 +1,6 @@
 require_relative '../app/item'
 
 class Author < Item
-
   attr_accessor :id, :first_name, :last_name, :items
 
   def initialize(id, first_name, last_name, items)
@@ -13,6 +12,5 @@ class Author < Item
   end
 
   def add_item(item)
-
   end
 end
