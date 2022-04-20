@@ -6,6 +6,5 @@ class Game
     @last_played_at = last_played_at
   end
 
-  def can_be_archived?
-  end
+  def can_be_archived?()end
 end
