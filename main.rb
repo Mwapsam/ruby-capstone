@@ -52,7 +52,7 @@ def console_start # rubocop:disable Metrics/CyclomaticComplexity, Metrics/Method
       puts 'app.add_movie'
     when 11
       puts 'Thank youu for using our app!'
-      break
+      exit
     else
       puts 'Please choose an appropriate number'
     end
