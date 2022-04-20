@@ -1,7 +1,6 @@
 require 'json'
 
 def save_music_albums(music_albums)
-  print "#{music_albums}"
   music_albums_data = music_albums.map do |music_album|
     {
       name: music_album.name,

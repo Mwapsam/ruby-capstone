@@ -22,7 +22,6 @@ class App
     @authors = []
   end
 
-
   def run
     puts 'This method is for fetching data from json files'
     @music_albums = load_music_albums
