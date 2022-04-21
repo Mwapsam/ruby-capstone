@@ -11,5 +11,17 @@
     "publisher" : "Joel Fobs",
     "published_date" : "2020-07-06",
     "cover_state" : "Bad"
+  },
+  {
+    "name" : "My Landloard",
+    "publisher" : "Mwape",
+    "published_date" : "2011-01-01",
+    "cover_state" : "Good"
+  },
+  {
+    "name" : "Power",
+    "publisher" : "Tommy Egan",
+    "published_date" : "2000-12-09",
+    "cover_state" : "bad"
   }
 ]
