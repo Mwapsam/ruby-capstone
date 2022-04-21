@@ -10,5 +10,10 @@ class Game
     @last_played_at = last_played_at
   end
 
-  def can_be_archived?()end
+  private
+
+  def can_be_archived?
+    diff = DateTime.now.year - @last_played_at.year
+    super && (diff > 2)
+  end
 end
