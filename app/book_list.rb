@@ -1,5 +1,6 @@
 require_relative './book'
 require_relative './label'
+require_relative '../data/book_crud'
 
 module Booklist
   def list_books
@@ -7,7 +8,8 @@ module Booklist
       puts 'You don\'t have any Books.'
     else
       @books.each_with_index do |book, index|
-        puts "#{index} name: #{book.name}, publisher: #{book.publisher}, publish_date:#{book.published_date}"
+        puts "#{index} Title: #{book.name}, Publisher: #{book.publisher}, Publish_date:#{book.published_date},
+        Cover State: #{book.cover_state}"
         puts ''
       end
     end
@@ -23,10 +25,15 @@ module Booklist
     published_date = gets.chomp
     print 'cover state: '
     cover_state = gets.chomp
+    stored_books = fetch_data('books')
     label = handle_label
     book = Book.new(publisher, cover_state, name, published_date)
     @labels << label unless @labels.include?(label)
     @books << book
+    book_data = { name: name, publisher: publisher, published_date: published_date,
+                  cover_state: cover_state }
+    stored_books.push(book_data)
+    update_data('books', stored_books)
     puts 'Book added successfully'
   end
 
@@ -65,7 +72,7 @@ module Booklist
     title = gets.chomp
     print 'Color: '
     color = gets.chomp
-    label = Label.new(title: title, color: color)
+    label = Label.new(title, color)
     @labels << label unless @labels.include?(label)
     puts 'Label added successfully'
   end

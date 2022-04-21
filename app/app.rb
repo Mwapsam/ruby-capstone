@@ -2,13 +2,17 @@ require_relative './console'
 require_relative './music_album'
 require_relative './genre'
 require_relative './music_list'
+require_relative './book'
+require_relative './book_list'
 require 'json'
 require_relative '../data/genre_crud'
 require_relative '../data/music_album_crud'
+require_relative '../data/book_crud'
 
 class App
   include Console
   include MusicList
+  include Booklist
 
   attr_accessor :books, :music_albums, :games, :genres,
                 :lables, :authors
@@ -26,5 +30,6 @@ class App
     puts 'This method is for fetching data from json files'
     @music_albums = load_music_albums
     @genres = load_genres
+    @books = populate_books
   end
 end
