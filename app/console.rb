@@ -29,7 +29,7 @@ module Console
       selected = gets.chomp.to_i
       case selected
       when 1
-        puts 'List all books'
+        list_books
       when 2
         list_music_albums
       when 3

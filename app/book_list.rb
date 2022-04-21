@@ -65,7 +65,7 @@ module Booklist
     title = gets.chomp
     print 'Color: '
     color = gets.chomp
-    label = Label.new(title: title, color: color)
+    label = Label.new(title, color)
     @labels << label unless @labels.include?(label)
     puts 'Label added successfully'
   end
