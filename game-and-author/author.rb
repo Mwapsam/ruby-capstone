@@ -1,10 +1,8 @@
-require_relative '../app/item'
-
-class Author < Item
+class Author
   attr_accessor :id, :first_name, :last_name
   attr_reader :items
 
-  def initialize(id: rand(1000), first_name:, last_name:)
+  def initialize(first_name:, last_name:, id: rand(1000))
     super
     @id = id
     @first_name = first_name
