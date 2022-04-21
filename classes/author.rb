@@ -3,7 +3,6 @@ class Author
   attr_reader :items
 
   def initialize(first_name:, last_name:, id: rand(1000))
-    super
     @id = id
     @first_name = first_name
     @last_name = last_name
