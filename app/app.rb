@@ -2,6 +2,8 @@ require_relative './console'
 require_relative './music_album'
 require_relative './genre'
 require_relative './music_list'
+require_relative './book'
+require './book_list'
 require 'json'
 require_relative '../data/genre_crud'
 require_relative '../data/music_album_crud'
@@ -9,6 +11,7 @@ require_relative '../data/music_album_crud'
 class App
   include Console
   include MusicList
+  include Booklist
 
   attr_accessor :books, :music_albums, :games, :genres,
                 :lables, :authors

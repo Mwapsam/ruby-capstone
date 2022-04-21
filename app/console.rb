@@ -41,7 +41,7 @@ module Console
       when 6
         puts 'list_all_authors'
       when 7
-        puts 'add_book'
+        add_book
       when 8
         add_music_album
       when 9
