@@ -19,7 +19,7 @@ describe Game do
     expect(is_archived).to eq false
   end
 
-describe 'last publish date more than 10 years ago' do
+  describe 'last publish date more than 10 years ago' do
     before :all do
       @publish_year = DateTime.now.year.to_i - 11
     end
