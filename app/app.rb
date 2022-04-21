@@ -7,6 +7,7 @@ require_relative './book_list'
 require 'json'
 require_relative '../data/genre_crud'
 require_relative '../data/music_album_crud'
+require_relative '../data/book_crud'
 
 class App
   include Console
@@ -29,5 +30,6 @@ class App
     puts 'This method is for fetching data from json files'
     @music_albums = load_music_albums
     @genres = load_genres
+    @books = populate_books
   end
 end
