@@ -1,9 +1,15 @@
 [
   {
-    "name" : "ghhg",
-    "publisher" : "hjhjujh",
-    "published_date" : "kjhu",
-    "cover_state" : "jhuj",
+    "name" : "Rich dad, Poor dad",
+    "publisher" : "Robert Kiosak",
+    "published_date" : "2004-04-01",
+    "cover_state" : "Good",
     "label" : null
+  },
+  {
+    "name" : "Atomic Habits",
+    "publisher" : "Joel Fobs",
+    "published_date" : "2020-07-06",
+    "cover_state" : "Bad"
   }
 ]
