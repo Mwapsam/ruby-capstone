@@ -12,7 +12,7 @@ module Console
       'List all authors',
       'Add a book',
       'Add a music album',
-      'Add a movie',
+      'List all movies',
       'Add a game',
       'Exit'
     ]
@@ -45,7 +45,7 @@ module Console
       when 8
         add_music_album
       when 9
-        puts 'add_movie'
+        list_movies
       when 10
         add_game
       when 11
