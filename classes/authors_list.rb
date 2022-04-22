@@ -1,5 +1,5 @@
 require 'pry'
-require_relative './author.rb'
+require_relative './author'
 require_relative '../data/authors_crud'
 
 module AuthorsList

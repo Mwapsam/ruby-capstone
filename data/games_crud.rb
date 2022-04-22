@@ -1,6 +1,6 @@
 require 'pry'
 require 'json'
-require_relative '../classes/game.rb'
+require_relative '../classes/game'
 
 def load_games
   games_json = File.read('./data/games.json')

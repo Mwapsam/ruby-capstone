@@ -1,4 +1,4 @@
-require_relative './game.rb'
+require_relative './game'
 require_relative '../data/games_crud'
 
 module GamesList

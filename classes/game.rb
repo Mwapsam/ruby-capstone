@@ -17,7 +17,7 @@ class Game < Item
   end
 
   def self.from_json(json)
-    Game.new(json["multiplayer"], json["last_played_at"], json["published_at"])
+    Game.new(json['multiplayer'], json['last_played_at'], json['published_at'])
   end
 
   private

@@ -1,6 +1,6 @@
 require 'pry'
 require 'json'
-require_relative '../classes/author.rb'
+require_relative '../classes/author'
 
 def load_authors
   authors_json = File.read('./data/authors.json')
