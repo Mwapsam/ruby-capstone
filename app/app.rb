@@ -27,7 +27,7 @@ class App
   include MoviesList
 
   attr_accessor :books, :music_albums, :games, :authors, :genres,
-                :lables, :authors_data, :games_data, :movies
+                :lables, :authors_data, :games_data, :movies, :movies_data
 
   def initialize
     @books = []

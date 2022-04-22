@@ -7,7 +7,7 @@ module MoviesList
       puts 'You don\'t have any movies.'
     else
       @movies.each_with_index do |movie, index|
-        puts "#{index} movie_name: #{movie.name}, published_date: #{movie.published_date}"
+        puts "#{index}, movie_name: #{movie.movie_name}, published_date: #{movie.published_date}"
         puts ''
       end
     end

@@ -10,9 +10,9 @@ module Console
       'List all genres',
       'List all labels',
       'List all authors',
+      'List all movies',
       'Add a book',
       'Add a music album',
-      'List all movies',
       'Add a game',
       'Exit'
     ]
@@ -41,11 +41,11 @@ module Console
       when 6
         list_authors
       when 7
-        add_book
-      when 8
-        add_music_album
-      when 9
         list_movies
+      when 8
+        add_book
+      when 9
+        add_music_album
       when 10
         add_game
       when 11
