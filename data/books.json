@@ -23,5 +23,11 @@
     "publisher" : "Tommy Egan",
     "published_date" : "2000-12-09",
     "cover_state" : "bad"
+  },
+  {
+    "name" : "My book",
+    "publisher" : "Cool ",
+    "published_date" : "2022-01-01",
+    "cover_state" : "bad"
   }
 ]

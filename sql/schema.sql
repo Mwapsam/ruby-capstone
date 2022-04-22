@@ -15,13 +15,17 @@ CREATE TABLE music_albums (
     FOREIGN KEY (genre_id) REFERENCES genres(id)
 );
 
+-- Create a table for books
 CREATE TABLE books(
   id INT GENERATED ALWAYS AS IDENTITY,
   publisher VARCHAR(255),
+  book_title VARCHAR(255),
   cover_state VARCHAR(255),
+  published_date DATE,
   FOREIGN KEY(id) REFERENCES item(id)
 );
 
+-- Create a table for labels
 CREATE TABLE labels(
   id INT GENERATED ALWAYS AS IDENTITY,
   title VARCHAR(255),
