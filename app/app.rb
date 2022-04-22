@@ -12,11 +12,15 @@ require_relative '../data/book_crud'
 require_relative '../classes/game_list'
 require_relative '../data/games_crud'
 
+require_relative '../classes/authors_list'
+require_relative '../data/authors_crud'
+
 class App
   include Console
   include MusicList
   include Booklist
   include GamesList
+  include AuthorsList
 
   attr_accessor :books, :music_albums, :games, :genres,
                 :lables, :authors, :games_data
@@ -36,6 +40,7 @@ class App
     @genres = load_genres
     @books = populate_books
     @games = load_games
+    @authors = load_authors
   end
 
 end
