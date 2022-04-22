@@ -50,7 +50,7 @@ module Console
         add_game
       when 11
         puts 'Thank you for using our app!'
-        break
+        exit
       else
         puts 'Please choose an appropriate number'
       end

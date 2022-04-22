@@ -12,6 +12,14 @@ class Game < Item
     @last_played_at = last_played_at
   end
 
+  def to_json(*_args)
+    JSON.generate({multiplayer: @multiplayer, last_played_at: @last_played_at, published_date: @published_date})
+  end
+
+  def self.from_json(json)
+    Game.new(json["multiplayer"], json["last_played_at"], json["published_at"])
+  end
+
   private
 
   def can_be_archived?
