@@ -20,7 +20,6 @@ module MoviesList
     print 'Enter Published date '
     published_date = gets.chomp
 
-
     movies_data = Movie.new(movie_name, published_date)
     @movies.push(movies_data)
     save_movies(@movies)
