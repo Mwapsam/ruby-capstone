@@ -39,7 +39,7 @@ module Console
       when 5
         puts 'list_labels'
       when 6
-        load_authors
+        list_authors
       when 7
         add_book
       when 8

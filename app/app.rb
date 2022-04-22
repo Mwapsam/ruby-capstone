@@ -22,8 +22,8 @@ class App
   include GamesList
   include AuthorsList
 
-  attr_accessor :books, :music_albums, :games, :genres,
-                :lables, :authors, :games_data
+  attr_accessor :books, :music_albums, :games, :authors, :genres,
+                :lables, :authors_data, :games_data
 
   def initialize
     @books = []
