@@ -19,7 +19,9 @@ CREATE TABLE music_albums (
 CREATE TABLE books(
   id INT GENERATED ALWAYS AS IDENTITY,
   publisher VARCHAR(255),
+  book_title VARCHAR(255),
   cover_state VARCHAR(255),
+  published_date DATE,
   FOREIGN KEY(id) REFERENCES item(id)
 );
 
