@@ -21,8 +21,4 @@ class Movie < Item
     @published_date = published_date
     super(id, published_date)
   end
-
-  def can_be_archived?
-    super
-  end
 end
