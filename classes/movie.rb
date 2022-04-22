@@ -2,7 +2,6 @@ require 'json'
 require_relative './helper'
 require_relative '../app/item'
 
-
 class Movie < Item
   attr_accessor :id, :name, :published_date
   attr_reader :items
@@ -22,6 +21,7 @@ class Movie < Item
     @name = name
     @published_date = published_date
     @items = []
+    super(id, published_date)
   end
 
   def can_be_archived?
