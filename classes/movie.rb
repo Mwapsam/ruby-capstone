@@ -9,7 +9,7 @@ class Movie < Item
   include Help
 
   def to_json(*_args)
-    JSON.generate({ name: @movie_name, published_date: @published_date })
+    JSON.generate({ movie_name: @movie_name, published_date: @published_date })
   end
 
   def self.from_json(json)

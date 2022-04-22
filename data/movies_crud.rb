@@ -13,3 +13,8 @@ def load_movies
   end
   movies_data
 end
+
+def save_movies(movies)
+  movies_data = JSON.generate(movies)
+  File.write('./data/movies.json', movies_data)
+end

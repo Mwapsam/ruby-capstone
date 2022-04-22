@@ -13,6 +13,7 @@ module Console
       'List all movies',
       'Add a book',
       'Add a music album',
+      'Add a movie',
       'Add a game',
       'Exit'
     ]
@@ -47,8 +48,10 @@ module Console
       when 9
         add_music_album
       when 10
-        add_game
+        add_movie
       when 11
+        add_game
+      when 12
         puts 'Thank you for using our app!'
         exit
       else

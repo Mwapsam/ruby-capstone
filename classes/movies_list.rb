@@ -13,4 +13,18 @@ module MoviesList
     end
     puts ''
   end
+
+  def add_movie
+    print 'Enter movie name'
+    movie_name = gets.chomp
+    print 'Enter Published date '
+    published_date = gets.chomp
+
+
+    movies_data = Movie.new(movie_name, published_date)
+    @movies.push(movies_data)
+    save_movies(@movies)
+
+    puts 'movie saved successfully!'
+  end
 end
