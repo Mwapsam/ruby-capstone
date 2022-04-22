@@ -7,7 +7,9 @@ module GamesList
       puts 'You don\'t have any games.'
     else
       @games.each_with_index do |game, index|
-        puts "#{index} multiplayer: #{game.multiplayer}, last_played_at: #{game.last_played_at}, published_date:#{game.published_date},
+        puts "#{index} multiplayer: #{game.multiplayer},
+        last_played_at: #{game.last_played_at},
+        published_date:#{game.published_date},
         id: #{game.id}"
         puts ''
       end
