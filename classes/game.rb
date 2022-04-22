@@ -1,10 +1,12 @@
+require 'pry'
 require_relative '../app/item'
 require 'date'
+require 'json'
 
 class Game < Item
-  attr_accessor :multiplayer, :last_played_at
+  attr_accessor :multiplayer, :last_played_at, :published_date
 
-  def initialize(multiplayer:, last_played_at:, published_date:, id: rand(1000))
+  def initialize(multiplayer, last_played_at, published_date, id = Random.rand(1..1000))
     super(id, published_date)
     @multiplayer = multiplayer
     @last_played_at = last_played_at

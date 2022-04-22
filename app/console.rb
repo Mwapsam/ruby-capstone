@@ -33,7 +33,7 @@ module Console
       when 2
         list_music_albums
       when 3
-        puts 'list_all_games'
+        list_games
       when 4
         list_genres
       when 5
@@ -47,7 +47,7 @@ module Console
       when 9
         puts 'add_movie'
       when 10
-        puts 'add_game'
+        add_game
       when 11
         puts 'Thank you for using our app!'
         break

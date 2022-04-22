@@ -9,13 +9,17 @@ require_relative '../data/genre_crud'
 require_relative '../data/music_album_crud'
 require_relative '../data/book_crud'
 
+require_relative '../classes/game_list'
+require_relative '../data/games_crud'
+
 class App
   include Console
   include MusicList
   include Booklist
+  include GamesList
 
   attr_accessor :books, :music_albums, :games, :genres,
-                :lables, :authors
+                :lables, :authors, :games_data
 
   def initialize
     @books = []
@@ -31,5 +35,7 @@ class App
     @music_albums = load_music_albums
     @genres = load_genres
     @books = populate_books
+    @games = load_games
   end
+
 end
