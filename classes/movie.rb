@@ -1,7 +1,9 @@
 require 'json'
 require_relative './helper'
+require_relative '../app/item'
 
-class Movie
+
+class Movie < Item
   attr_accessor :id, :name, :published_date
   attr_reader :items
 
@@ -22,8 +24,7 @@ class Movie
     @items = []
   end
 
-  def add_item(item)
-    @items << item
-    item.add_author self
+  def can_be_archived?
+    super || @silent
   end
 end
