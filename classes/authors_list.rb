@@ -14,5 +14,4 @@ module AuthorsList
     end
     puts ''
   end
-
 end

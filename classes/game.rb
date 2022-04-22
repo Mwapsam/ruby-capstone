@@ -13,7 +13,7 @@ class Game < Item
   end
 
   def to_json(*_args)
-    JSON.generate({multiplayer: @multiplayer, last_played_at: @last_played_at, published_date: @published_date})
+    JSON.generate({ multiplayer: @multiplayer, last_played_at: @last_played_at, published_date: @published_date })
   end
 
   def self.from_json(json)

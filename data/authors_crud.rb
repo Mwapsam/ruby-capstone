@@ -8,9 +8,9 @@ def load_authors
   if authors_json.empty?
     authors_data
   else
-  JSON.parse(authors_json).each do |json|
-    authors_data << Author.from_json(json)
+    JSON.parse(authors_json).each do |json|
+      authors_data << Author.from_json(json)
+    end
   end
-  end
-   authors_data
+  authors_data
 end

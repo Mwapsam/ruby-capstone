@@ -42,5 +42,4 @@ class App
     @games = load_games
     @authors = load_authors
   end
-
 end

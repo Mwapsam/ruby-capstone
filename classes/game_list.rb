@@ -23,7 +23,7 @@ module GamesList
     print 'Last_played_date'
     last_played_at = gets.chomp
 
-    games_data = Game.new(multiplayer, published_date,  last_played_at)
+    games_data = Game.new(multiplayer, published_date, last_played_at)
     @games.push(games_data)
     save_game(@games)
 

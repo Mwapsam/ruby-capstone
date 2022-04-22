@@ -8,11 +8,11 @@ class Author
   include Help
 
   def to_json(*_args)
-    JSON.generate({id: @id, first_name: @first_name, last_name: @last_name})
+    JSON.generate({ id: @id, first_name: @first_name, last_name: @last_name })
   end
 
   def self.from_json(json)
-    Author.new(json["first_name"], json["last_name"], json["id"] )
+    Author.new(json["first_name"], json["last_name"], json["id"])
   end
 
   def initialize(first_name, last_name, id = rand(1000))
