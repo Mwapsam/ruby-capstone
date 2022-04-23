@@ -12,7 +12,6 @@ def load_movies
         movies_data << Movie.from_json(json)
       end
     end
-    movies_data
   else
     File.write('./data/movies.json', JSON.generate([]))
     movies_data
