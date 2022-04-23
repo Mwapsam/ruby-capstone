@@ -2,6 +2,7 @@ require_relative './book'
 require_relative './label'
 require_relative '../data/book_crud'
 require_relative '../data/label_crud'
+require 'pry'
 
 module Booklist
   def list_books
@@ -64,6 +65,7 @@ module Booklist
     color = gets.chomp
     stored_label = fetch_data('labels')
     label = Label.new(title, color)
+    @labels << label unless @labels.include?(label)
     @labels << label
     label_data = { title: title, color: color }
     stored_label.push(label_data)
