@@ -1,0 +1,14 @@
+[
+	{
+		"first_name": "Billions",
+		"last_name": "Joel",
+		"id": 101,
+		"items": ["Item1"]
+	},
+	{
+		"first_name": "Mwape",
+		"last_name": "Vana",
+		"id": 202,
+		"items": ["Item2"]
+	}
+]
