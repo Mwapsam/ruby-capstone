@@ -58,7 +58,6 @@ module Booklist
     end
   end
 
-
   def add_label
     print 'Label Name: '
     title = gets.chomp
