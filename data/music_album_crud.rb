@@ -24,7 +24,11 @@ def load_music_albums
     music_album_data
   else
     JSON.parse(music_json).each do |music_album|
-      music_item = MusicAlbum.new(Time.at(music_album['published_date']), music_album['genre_id'], music_album['name'], music_album['on_spotify'], music_album['archived'],
+      music_item = MusicAlbum.new(Time.at(music_album['published_date']), 
+                                  music_album['genre_id'], 
+                                  music_album['name'], 
+                                  music_album['on_spotify'], 
+                                  music_album['archived'],
                                   music_album['id'])
       genres_data.each do |genre|
         music_item.add_genre = genre if genre.id == music_album['genre_id']

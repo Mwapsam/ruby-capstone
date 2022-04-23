@@ -42,7 +42,9 @@ module MusicList
       music_album_add_genre = @genres[genre_index].name
     end
 
-    music_album = MusicAlbum.new(Time.new(year, month, day), music_album_add_genre, name, spotify_answer, archived = false)
+    music_album = MusicAlbum.new(Time.new(year, month, day), 
+                                music_album_add_genre, name,
+                                spotify_answer, archived = false)
 
     @music_albums.push(music_album)
     save_music_albums(@music_albums, music_album_add_genre)

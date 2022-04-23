@@ -2,7 +2,7 @@ require_relative '../app/music_album'
 
 describe MusicAlbum do
   before :each do
-    @music = MusicAlbum.new(Time.new(2021, 05, 16), 'Pop', 'Stay', false, true, 442)
+    @music = MusicAlbum.new(Time.new(2021, 0o5, 16), 'Pop', 'Stay', false, true, 442)
   end
 
   context 'When testing the MusicAlbum class' do
