@@ -17,8 +17,11 @@ def save_music_albums(music_albums, music_album_add_genre)
 end
 
 def load_music_albums
-  music_json = File.read('./data/music.json')
+
   music_album_data = []
+  if File.exist?('./data/music.json')
+  music_json = File.read('./data/music.json')
+
   genres_data = load_genres
   if music_json.empty?
     music_album_data
@@ -37,4 +40,5 @@ def load_music_albums
     end
   end
   music_album_data
+  end
 end
