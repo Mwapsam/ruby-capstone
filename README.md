@@ -6,7 +6,7 @@ This is Ruby capstone project for Microverse program.
 ![screenshot](./app-screenshot.png)
 
 ## Demo video link
- Click [here]() for the video
+ Click [here](https://drive.google.com/file/d/11wdxYx66bYJFhKwLA_us2CwkhSOH6yCa/view?usp=sharing) for the video
 
 ## Built With
 - Ruby
