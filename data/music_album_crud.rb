@@ -1,5 +1,4 @@
 require 'json'
-require 'pry'
 
 def save_music_albums(music_albums, music_album_add_genre)
   music_albums_data = music_albums.map do |music_album|

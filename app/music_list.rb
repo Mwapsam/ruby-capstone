@@ -2,7 +2,6 @@ require_relative './helper'
 require_relative './music_album'
 require_relative '../data/music_album_crud'
 require_relative './genre'
-require 'pry'
 
 module MusicList
   include Helper

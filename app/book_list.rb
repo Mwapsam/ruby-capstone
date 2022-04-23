@@ -28,9 +28,8 @@ module Booklist
     print 'cover state: '
     cover_state = gets.chomp
     stored_books = fetch_data('books')
-    label = handle_label
+    handle_label
     book = Book.new(publisher, cover_state, name, published_date)
-    @labels << label unless @labels.include?(label)
     @books << book
     book_data = { name: name, publisher: publisher, published_date: published_date,
                   cover_state: cover_state }
@@ -41,7 +40,7 @@ module Booklist
 
   def handle_label
     if @labels.any?
-      print "enter 'N' to create a new label or 'S' to select an existing one"
+      print "enter 'N' to create a new label or 'S' to select an existing one from the list: "
       option = gets.chomp.upcase
       case option
       when 'N'
@@ -59,17 +58,6 @@ module Booklist
     end
   end
 
-  def list_labels
-    if @labels.empty?
-      puts 'You don\'t have any Labels.'
-    else
-      @labels.each_with_index do |label, index|
-        puts "#{index} Title: #{label.title}, Color: #{label.color}"
-        puts ''
-      end
-    end
-    puts ''
-  end
 
   def add_label
     print 'Label Name: '
@@ -79,9 +67,21 @@ module Booklist
     stored_label = fetch_data('labels')
     label = Label.new(title, color)
     @labels << label unless @labels.include?(label)
+    @labels << label
     label_data = { title: title, color: color }
     stored_label.push(label_data)
     update_data('labels', stored_label)
     puts 'Label added successfully'
+  end
+
+  def list_labels
+    if @labels.empty?
+      puts 'You don\'t have any Labels.'
+    else
+      @labels.each_with_index do |label, index|
+        puts "#{index} Name: #{label.title}, Color: #{label.color}"
+        puts ''
+      end
+    end
   end
 end
