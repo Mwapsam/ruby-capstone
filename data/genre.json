@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Metal",
+    "id": 445
+  },
+  {
+    "name": "Rock",
+    "id": 177
+  },
+  {
+    "name": "Jazz",
+    "id": 305
+  },
+  {
+    "name": "Pop",
+    "id": 782
+  },
+  {
+    "name": "Hip hop",
+    "id": 616
+  },
+  {
+    "name": "Country",
+    "id": 661
+  },
+  {
+    "name": "Electronic",
+    "id": 793
+  },
+  {
+    "name": "Classical",
+    "id": 619
+  },
+  {
+    "name": "Punk",
+    "id": 150
+  },
+  {
+    "name": "Funk",
+    "id": 536
+  },
+  {
+    "name": "Reggae",
+    "id": 322
+  },
+  {
+    "name": "Techno",
+    "id": 740
+  }
+]

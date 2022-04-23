@@ -1,6 +1,7 @@
 require_relative './book'
 require_relative './label'
 require_relative '../data/book_crud'
+require_relative '../data/label_crud'
 
 module Booklist
   def list_books
@@ -62,7 +63,8 @@ module Booklist
       puts 'You don\'t have any Labels.'
     else
       @labels.each_with_index do |label, index|
-        puts "#{index}) Label: #{label.name} Color: #{label.color}"
+        puts "#{index} Name: #{label.title}, Color: #{label.color}"
+        puts ''
       end
     end
   end
@@ -72,8 +74,12 @@ module Booklist
     title = gets.chomp
     print 'Color: '
     color = gets.chomp
+    stored_label = fetch_data('labels')
     label = Label.new(title, color)
     @labels << label unless @labels.include?(label)
+    label_data = { name: title, color: color }
+    stored_label.push(label_data)
+    update_data('labels', stored_label)
     puts 'Label added successfully'
   end
 end

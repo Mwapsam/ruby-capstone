@@ -8,6 +8,7 @@ require 'json'
 require_relative '../data/genre_crud'
 require_relative '../data/music_album_crud'
 require_relative '../data/book_crud'
+require_relative '../data/label_crud'
 
 require_relative '../classes/game_list'
 require_relative '../data/games_crud'
@@ -43,8 +44,6 @@ class App
     @music_albums = load_music_albums
     @genres = load_genres
     @books = populate_books
-    @games = load_games
-    @authors = load_authors
-    @movies = load_movies
+    @labels = populate_labels
   end
 end
