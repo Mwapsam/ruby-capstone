@@ -10,6 +10,7 @@ module Console
       'List all genres',
       'List all labels',
       'List all authors',
+      'List all movies',
       'Add a book',
       'Add a music album',
       'Add a movie',
@@ -33,24 +34,26 @@ module Console
       when 2
         list_music_albums
       when 3
-        puts 'list_all_games'
+        list_games
       when 4
         list_genres
       when 5
         puts 'list_labels'
       when 6
-        puts 'list_all_authors'
+        list_authors
       when 7
-        add_book
+        list_movies
       when 8
-        add_music_album
+        add_book
       when 9
-        puts 'add_movie'
+        add_music_album
       when 10
-        puts 'add_game'
+        add_movie
       when 11
+        add_game
+      when 12
         puts 'Thank you for using our app!'
-        break
+        exit
       else
         puts 'Please choose an appropriate number'
       end

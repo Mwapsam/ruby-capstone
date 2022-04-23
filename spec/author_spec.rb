@@ -2,7 +2,7 @@ require_relative '../classes/author'
 
 describe Author do
   it 'adds an item to the author' do
-    author = Author.new(first_name: 'first_name', last_name: 'last_name')
+    author = Author.new('first_name', 'last_name')
     item = double('item')
     allow(item).to receive(:add_author)
     author.add_item item
