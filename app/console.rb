@@ -37,7 +37,7 @@ module Console
       when 4
         list_genres
       when 5
-        puts 'list_labels'
+        list_labels
       when 6
         puts 'list_all_authors'
       when 7

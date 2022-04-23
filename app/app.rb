@@ -8,6 +8,7 @@ require 'json'
 require_relative '../data/genre_crud'
 require_relative '../data/music_album_crud'
 require_relative '../data/book_crud'
+require_relative '../data/label_crud'
 
 class App
   include Console
@@ -31,5 +32,6 @@ class App
     @music_albums = load_music_albums
     @genres = load_genres
     @books = populate_books
+    @labels = populate_labels
   end
 end
