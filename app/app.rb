@@ -45,5 +45,8 @@ class App
     @genres = load_genres
     @books = populate_books
     @labels = populate_labels
+    @games = load_games
+    @authors = load_authors
+    @movies = load_movies
   end
 end
