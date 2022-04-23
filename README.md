@@ -1,6 +1,13 @@
 # ruby-capstone
 > In this project, you can create items (games, music albums, books) and store them in a database.
 This is Ruby capstone project for Microverse program.
+
+## App screenshot
+![screenshot](./app-screenshot.png)
+
+## Demo video link
+ Click [here]() for the video
+
 ## Built With
 - Ruby
 - Gem
