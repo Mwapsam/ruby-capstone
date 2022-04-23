@@ -4,15 +4,15 @@ require_relative '../classes/game'
 def load_games
   games_data = []
   if File.exist?('./data/games.json')
-  games_json = File.read('./data/games.json')
-  if games_json.empty?
-    games_data
-  else
-    JSON.parse(games_json).each do |json|
-      games_data << Game.from_json(json)
+    games_json = File.read('./data/games.json')
+    if games_json.empty?
+      games_data
+    else
+      JSON.parse(games_json).each do |json|
+        games_data << Game.from_json(json)
+      end
     end
-  end
-  games_data
+    games_data
   end
 end
 

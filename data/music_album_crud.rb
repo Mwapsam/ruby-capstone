@@ -17,28 +17,27 @@ def save_music_albums(music_albums, music_album_add_genre)
 end
 
 def load_music_albums
-
   music_album_data = []
   if File.exist?('./data/music.json')
-  music_json = File.read('./data/music.json')
+    music_json = File.read('./data/music.json')
 
-  genres_data = load_genres
-  if music_json.empty?
-    music_album_data
-  else
-    JSON.parse(music_json).each do |music_album|
-      music_item = MusicAlbum.new(Time.at(music_album['published_date']),
-                                  music_album['genre_id'],
-                                  music_album['name'],
-                                  music_album['on_spotify'],
-                                  music_album['archived'],
-                                  music_album['id'])
-      genres_data.each do |genre|
-        music_item.add_genre = genre if genre.id == music_album['genre_id']
+    genres_data = load_genres
+    if music_json.empty?
+      music_album_data
+    else
+      JSON.parse(music_json).each do |music_album|
+        music_item = MusicAlbum.new(Time.at(music_album['published_date']),
+                                    music_album['genre_id'],
+                                    music_album['name'],
+                                    music_album['on_spotify'],
+                                    music_album['archived'],
+                                    music_album['id'])
+        genres_data.each do |genre|
+          music_item.add_genre = genre if genre.id == music_album['genre_id']
+        end
+        music_album_data.push(music_item)
       end
-      music_album_data.push(music_item)
     end
-  end
-  music_album_data
+    music_album_data
   end
 end
