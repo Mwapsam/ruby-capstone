@@ -15,6 +15,22 @@ CREATE TABLE music_albums (
     FOREIGN KEY (genre_id) REFERENCES genres(id)
 );
 
+-- Create a table for the item
+CREATE TABLE item(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  genre_id INT,
+  author_id INT,
+  label_id  INT,
+  source_id INT,
+  publish_date DATE,
+  archived BOOLEAN,
+  PRIMARY KEY(id),
+  FOREIGN KEY (genre_id) REFERENCES genres (id),
+  FOREIGN KEY (author_id) REFERENCES authors (id),
+  FOREIGN KEY (source_id) REFERENCES sources (id),
+  FOREIGN KEY (label_id) REFERENCES labels (id)
+);
+
 -- Create a table for books
 CREATE TABLE books(
   id INT GENERATED ALWAYS AS IDENTITY,

@@ -29,5 +29,47 @@
     "publisher" : "Cool ",
     "published_date" : "2022-01-01",
     "cover_state" : "bad"
+  },
+  {
+    "name" : "Escape from Congo",
+    "publisher" : "Marshal Mathews",
+    "published_date" : "2022-03-18",
+    "cover_state" : "Good"
+  },
+  {
+    "name" : "Power Force",
+    "publisher" : "Jame Saint Patricks",
+    "published_date" : "2022-07-09",
+    "cover_state" : "bad"
+  },
+  {
+    "name" : "Titanic",
+    "publisher" : "Jack Doss",
+    "published_date" : "2022-03-04",
+    "cover_state" : "bad"
+  },
+  {
+    "name" : "Garden House",
+    "publisher" : "Mwape",
+    "published_date" : "2022-02-09",
+    "cover_state" : "good"
+  },
+  {
+    "name" : "jbhihjbjn",
+    "publisher" : "uijonhk",
+    "published_date" : "bijhuijho",
+    "cover_state" : "huhu"
+  },
+  {
+    "name" : "ijhihjjihn",
+    "publisher" : "injoijoki",
+    "published_date" : "pijoijpokm",
+    "cover_state" : "pokko"
+  },
+  {
+    "name" : "gugugh",
+    "publisher" : "huyuu",
+    "published_date" : "ihyu",
+    "cover_state" : "iuu"
   }
 ]
